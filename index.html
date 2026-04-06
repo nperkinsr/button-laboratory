@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A starter project" />
+
+  <title>Button Library</title>
+
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <main id="main-content" class="container">
+    <section class="section" aria-labelledby="buttons-title">
+      <header class="section-header">
+        <span class="section-badge">Button Library</span>
+        <h2 id="buttons-title" class="section-title">A collection of ready-to-use buttons</h2>
+        <p class="section-description">
+          Browse a selection of button styles and copy the code directly into your project.
+          They are kept simple and flexible, making it easier to customise them to fit your design.
+        </p>
+      </header>
+
+      <div class="categories">
+
+        <article class="category category-simple" aria-labelledby="cat-1-title">
+          <header class="category-header">
+            <span class="category-number" aria-hidden="true">01</span>
+            <div class="category-info">
+              <h3 id="cat-1-title" class="category-title">Simple & Clean</h3>
+              <p class="category-description">
+                Minimal button treatments with calm, straightforward transitions and no hover lift.
+              </p>
+            </div>
+            <div class="category-tags">
+              <span class="tag">color fade</span>
+              <span class="tag">underline</span>
+              <span class="tag">ring</span>
+              <span class="tag">inset shadow</span>
+            </div>
+          </header>
+          <div class="category-grid">
+            <div class="button-card">
+              <button class="btn btn-simple-fade">Fade</button>
+              <span class="button-name">Soft Colour Fade</span>
+            </div>
+            <div class="button-card">
+              <button class="btn btn-simple-invert">Invert</button>
+              <span class="button-name">Quiet Invert</span>
+            </div>
+            <div class="button-card">
+              <button class="btn btn-simple-underline"><span>Underline</span></button>
+              <span class="button-name">Underline Reveal</span>
+            </div>
+            <div class="button-card">
+              <button class="btn btn-simple-ring">Ring</button>
+              <span class="button-name">Ring Fade In</span>
+            </div>
+            <div class="button-card">
+              <button class="btn btn-simple-splitline">Split Line</button>
+              <span class="button-name">Split Line Merge</span>
+            </div>
+            <div class="button-card">
+              <button class="btn btn-simple-inset">Inset</button>
+              <span class="button-name">Inset Surface Shift</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="category" aria-labelledby="cat-2-title">
+          <header class="category-header">
+            <span class="category-number" aria-hidden="true">02</span>
+            <div class="category-info">
+              <h3 id="cat-2-title" class="category-title">Gradient & Color</h3>
+              <p class="category-description">
+                Color manipulation using CSS gradients and modern color functions.
+              </p>
+            </div>
+            <div class="category-tags">
+              <span class="tag">linear-gradient</span>
+              <span class="tag">radial-gradient</span>
+              <span class="tag">conic-gradient</span>
+              <span class="tag">oklch()</span>
+            </div>
+          </header>
+          <div class="category-grid">
+            <div class="button-card">
+              <button class="btn btn-gradient-linear">Linear</button>
+              <span class="button-name">Linear Gradient</span>
+            </div>
+            <div class="button-card">
+              <button class="btn btn-gradient-radial">Radial</button>
+              <span class="button-name">Radial Gradient</span>
+            </div>
+            <div class="button-card">
+              <button class="btn btn-gradient-conic">Conic</button>
+              <span class="button-name">Conic Gradient</span>
+            </div>
+            <div class="button-card">
+              <button class="btn btn-gradient-animated">Animated</button>
+              <span class="button-name">Animated Gradient</span>
+            </div>
+            <div class="button-card">
+              <button class="btn btn-gradient-shift">Shift</button>
+              <span class="button-name">Gradient Shift</span>
+            </div>
+            <div class="button-card">
+              <button class="btn btn-hue-rotate">Hue Rotate</button>
+              <span class="button-name">Hue Rotation</span>
+            </div>
+            <div class="button-card">
+              <button class="btn btn-gradient-outline-fill">Outline</button>
+              <span class="button-name">Gradient Outline Fill</span>
+            </div>
+            <div class="button-card">
+              <button class="btn btn-gradient-duotone">Duotone</button>
+              <span class="button-name">Duotone Split</span>
+            </div>
+            <div class="button-card">
+              <button class="btn btn-gradient-stripe">Stripe</button>
+              <span class="button-name">Gradient Stripe</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="category" aria-labelledby="cat-3-title">
+          <header class="category-header">
+            <span class="category-number" aria-hidden="true">03</span>
+            <div class="category-info">
+              <h3 id="cat-3-title" class="category-title">Border & Outline</h3>
+              <p class="category-description">
+                Creative border effects using gradients, animations, and masking.
+              </p>
+            </div>
+            <div class="category-tags">
+              <span class="tag">border</span>
+              <span class="tag">outline</span>
+              <span class="tag">mask</span>
+              <span class="tag">clip-path</span>
+            </div>
+          </header>
+          <div class="category-grid">
+            <div class="button-card">
+              <button class="btn btn-border-conic">Conic</button>
+              <span class="button-name">Conic Border</span>
+            </div>
+            <div class="button-card">
+              <button class="btn btn-border-gradient">Gradient</button>
+              <span class="button-name">Gradient Border</span>
+            </div>
+            <div class="button-card">
+              <button class="btn btn-border-dashed">Dashed</button>
+              <span class="button-name">Dashed Animated</span>
+            </div>
+            <div class="button-card">
+              <button class="btn btn-border-double">Double</button>
+              <span class="button-name">Double Border</span>
+            </div>
+            <div class="button-card">
+              <button class="btn btn-border-reveal">Reveal</button>
+              <span class="button-name">Border Reveal</span>
+            </div>
+            <div class="button-card">
+              <button class="btn btn-outline-offset">Offset</button>
+              <span class="button-name">Outline Offset</span>
+            </div>
+            <div class="button-card">
+              <button class="btn btn-border-corners">Corner</button>
+              <span class="button-name">Corner Grow Border</span>
+            </div>
+            <div class="button-card">
+              <button class="btn btn-border-brackets">Brackets</button>
+              <span class="button-name">Corner Brackets</span>
+            </div>
+            <div class="button-card">
+              <button class="btn btn-border-insetdraw">Inset</button>
+              <span class="button-name">Inset Border Draw</span>
+            </div>
+            <div class="button-card">
+              <button class="btn btn-border-splitframe">Split</button>
+              <span class="button-name">Split Top/Bottom Border</span>
+            </div>
+            <div class="button-card">
+              <button class="btn btn-border-clipped">Clipped</button>
+              <span class="button-name">Clipped Corners</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="category" aria-labelledby="cat-4-title">
+          <header class="category-header">
+            <span class="category-number" aria-hidden="true">04</span>
+            <div class="category-info">
+              <h3 id="cat-4-title" class="category-title">Shadow & Glow</h3>
+              <p class="category-description">
+                Depth and luminance effects using box-shadow and filters.
+              </p>
+            </div>
+            <div class="category-tags">
+              <span class="tag">box-shadow</span>
+              <span class="tag">filter</span>
+              <span class="tag">drop-shadow</span>
+            </div>
+          </header>
+          <div class="category-grid">
+            <div class="button-card button-card-dark">
+              <button class="btn btn-neon">Neon</button>
+              <span class="button-name">Neon Glow</span>
+            </div>
+            <div class="button-card button-card-dark">
+              <button class="btn btn-shadow-colored">Colored</button>
+              <span class="button-name">Colored Shadow</span>
+            </div>
+            <div class="button-card button-card-dark">
+              <button class="btn btn-glow-pulse">Pulse</button>
+              <span class="button-name">Glow Pulse</span>
+            </div>
+            <div class="button-card button-card-dark">
+              <button class="btn btn-inset-neon">Inset</button>
+              <span class="button-name">Inset Neon</span>
+            </div>
+            <div class="button-card button-card-dark">
+              <button class="btn btn-shadow-bloom">Bloom</button>
+              <span class="button-name">Shadow Bloom</span>
+            </div>
+            <div class="button-card button-card-dark">
+              <button class="btn btn-glow-dual">Dual</button>
+              <span class="button-name">Dual Glow</span>
+            </div>
+            <div class="button-card">
+              <button class="btn btn-shadow-layers">Layers</button>
+              <span class="button-name">Multi-Layer</span>
+            </div>
+            <div class="button-card">
+              <button class="btn btn-shadow-lift">Lift</button>
+              <span class="button-name">Shadow Lift</span>
+            </div>
+            <div class="button-card">
+              <button class="btn btn-shadow-long">Long</button>
+              <span class="button-name">Long Shadow</span>
+            </div>
+            <div class="button-card">
+              <button class="btn btn-shadow-trail">Trail</button>
+              <span class="button-name">Drop Shadow Trail</span>
+            </div>
+            <div class="button-card">
+              <button class="btn btn-shadow-cutout">Side</button>
+              <span class="button-name">Side Shadow</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="category" aria-labelledby="cat-5-title">
+          <header class="category-header">
+            <span class="category-number" aria-hidden="true">05</span>
+            <div class="category-info">
+              <h3 id="cat-5-title" class="category-title">Transform & 3D</h3>
+              <p class="category-description">
+                Spatial transformations using CSS 3D transforms and perspective.
+              </p>
+            </div>
+            <div class="category-tags">
+              <span class="tag">transform</span>
+              <span class="tag">perspective</span>
+              <span class="tag">rotate3d</span>
+              <span class="tag">scale</span>
+            </div>
+          </header>
+          <div class="category-grid">
+            <div class="button-card">
+              <button class="btn btn-3d-push">3D Push</button>
+              <span class="button-name">3D Push Button</span>
+            </div>
+            <div class="button-card">
+              <div class="btn btn-flip-alt">
+                <div class="flip-inner">
+                  <button class="flip-front" type="button">Flip Me</button>
+                  <button class="flip-back" type="button">Flipped!</button>
+                </div>
+              </div>
+              <span class="button-name">Flip Card</span>
+            </div>
+            <div class="button-card">
+              <button class="btn btn-rotate">Rotate</button>
+              <span class="button-name">Rotate Hover</span>
+            </div>
+            <div class="button-card">
+              <button class="btn btn-scale-bounce">Bounce</button>
+              <span class="button-name">Scale Bounce</span>
+            </div>
+            <div class="button-card">
+              <button class="btn btn-tilt">Tilt</button>
+              <span class="button-name">Perspective Tilt</span>
+            </div>
+            <div class="button-card">
+              <button class="btn btn-magnetic">Magnetic</button>
+              <span class="button-name">Magnetic Pull</span>
+            </div>
+            <div class="button-card">
+              <button class="btn btn-shake">Shake</button>
+              <span class="button-name">Shake Effect</span>
+            </div>
+            <div class="button-card">
+              <button class="btn btn-press-return">Press</button>
+              <span class="button-name">Press &amp; Return</span>
+            </div>
+            <div class="button-card">
+              <button class="btn btn-depth-swap">Depth</button>
+              <span class="button-name">Depth Swap</span>
+            </div>
+            <div class="button-card">
+              <button class="btn btn-book-flip" data-front="Book" data-back="Open"></button>
+              <span class="button-name">Book Flip</span>
+            </div>
+            <div class="button-card">
+              <button class="btn btn-layer-slide">Layer</button>
+              <span class="button-name">Layer Slide</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="category" aria-labelledby="cat-6-title">
+          <header class="category-header">
+            <span class="category-number" aria-hidden="true">06</span>
+            <div class="category-info">
+              <h3 id="cat-6-title" class="category-title">Fill Animations</h3>
+              <p class="category-description">
+                Dynamic fill effects using pseudo-elements and clip-path.
+              </p>
+            </div>
+            <div class="category-tags">
+              <span class="tag">::before</span>
+              <span class="tag">::after</span>
+              <span class="tag">clip-path</span>
+              <span class="tag">transform</span>
+            </div>
+          </header>
+          <div class="category-grid">
+            <div class="button-card">
+              <button class="btn btn-fill-left"><span>Left</span></button>
+              <span class="button-name">Slide Left</span>
+            </div>
+            <div class="button-card">
+              <button class="btn btn-fill-right"><span>Right</span></button>
+              <span class="button-name">Slide Right</span>
+            </div>
+            <div class="button-card">
+              <button class="btn btn-fill-up"><span>Up</span></button>
+              <span class="button-name">Slide Up</span>
+            </div>
+            <div class="button-card">
+              <button class="btn btn-fill-down"><span>Down</span></button>
+              <span class="button-name">Slide Down</span>
+            </div>
+            <div class="button-card">
+              <button class="btn btn-fill-radial"><span>Radial</span></button>
+              <span class="button-name">Radial Fill</span>
+            </div>
+            <div class="button-card">
+              <button class="btn btn-fill-diagonal"><span>Diagonal</span></button>
+              <span class="button-name">Diagonal Wipe</span>
+            </div>
+            <div class="button-card">
+              <button class="btn btn-fill-curtain"><span>Curtain</span></button>
+              <span class="button-name">Curtain Reveal</span>
+            </div>
+            <div class="button-card">
+              <button class="btn btn-fill-liquid"><span>Liquid</span></button>
+              <span class="button-name">Liquid Fill</span>
+            </div>
+            <div class="button-card">
+              <button class="btn btn-fill-center-split"><span>Split</span></button>
+              <span class="button-name">Center Split Fill</span>
+            </div>
+            <div class="button-card">
+              <button class="btn btn-fill-border-trace"><span>Border</span></button>
+              <span class="button-name">Border Fill</span>
+            </div>
+            <div class="button-card">
+              <button class="btn btn-fill-wave"><span>Wave</span></button>
+              <span class="button-name">Wave Fill</span>
+            </div>
+            <div class="button-card">
+              <button class="btn btn-fill-cross"><span>Cross</span></button>
+              <span class="button-name">Cross Fill</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="category" aria-labelledby="cat-7-title">
+          <header class="category-header">
+            <span class="category-number" aria-hidden="true">07</span>
+            <div class="category-info">
+              <h3 id="cat-7-title" class="category-title">Text Effects</h3>
+              <p class="category-description">
+                Typography-focused effects using text-shadow and background-clip.
+              </p>
+            </div>
+            <div class="category-tags">
+              <span class="tag">text-shadow</span>
+              <span class="tag">background-clip</span>
+              <span class="tag">letter-spacing</span>
+            </div>
+          </header>
+          <div class="category-grid">
+            <div class="button-card">
+              <button class="btn btn-text-glitch" data-text="GLITCH">GLITCH</button>
+              <span class="button-name">Glitch Text</span>
+            </div>
+            <div class="button-card">
+              <button class="btn btn-text-gradient"><span>Gradient</span></button>
+              <span class="button-name">Gradient Text</span>
+            </div>
+            <div class="button-card">
+              <button class="btn btn-text-shadow">Shadow</button>
+              <span class="button-name">Text Shadow</span>
+            </div>
+            <div class="button-card">
+              <button class="btn btn-text-expand">Expand</button>
+              <span class="button-name">Letter Expand</span>
+            </div>
+            <div class="button-card">
+              <button class="btn btn-text-reveal" data-hover="REVEALED"><span>Reveal</span></button>
+              <span class="button-name">Text Reveal</span>
+            </div>
+            <div class="button-card">
+              <button class="btn btn-text-slide-swap" data-hover="SWAPPED"><span>Slide</span></button>
+              <span class="button-name">Text Slide Swap</span>
+            </div>
+            <div class="button-card">
+              <button class="btn btn-text-blur">Blur</button>
+              <span class="button-name">Blur to Sharp</span>
+            </div>
+            <div class="button-card">
+              <button class="btn btn-text-stretch">Stretch</button>
+              <span class="button-name">Text Stretch</span>
+            </div>
+            <div class="button-card">
+              <button class="btn btn-text-highlight"><span>Highlight</span></button>
+              <span class="button-name">Highlight Sweep</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="category" aria-labelledby="cat-8-title">
+          <header class="category-header">
+            <span class="category-number" aria-hidden="true">08</span>
+            <div class="category-info">
+              <h3 id="cat-8-title" class="category-title">Shape Morphing</h3>
+              <p class="category-description">
+                Dynamic shape transformations using border-radius and clip-path.
+              </p>
+            </div>
+            <div class="category-tags">
+              <span class="tag">border-radius</span>
+              <span class="tag">clip-path</span>
+              <span class="tag">polygon</span>
+            </div>
+          </header>
+          <div class="category-grid">
+            <div class="button-card">
+              <button class="btn btn-morph-pill-square">Pill</button>
+              <span class="button-name">Pill to Square</span>
+            </div>
+            <div class="button-card">
+              <button class="btn btn-morph-circle">Circle</button>
+              <span class="button-name">Square to Circle</span>
+            </div>
+            <div class="button-card">
+              <button class="btn btn-morph-blob">Blob</button>
+              <span class="button-name">Blob Shape</span>
+            </div>
+            <div class="button-card">
+              <button class="btn btn-morph-elastic">Elastic</button>
+              <span class="button-name">Elastic Stretch</span>
+            </div>
+            <div class="button-card">
+              <button class="btn btn-morph-hexagon">Hexagon</button>
+              <span class="button-name">Hexagon Shape</span>
+            </div>
+            <div class="button-card">
+              <button class="btn btn-morph-diamond" aria-label="Diamond shape">
+                <i class="bi bi-stars" aria-hidden="true"></i>
+              </button>
+              <span class="button-name">Diamond Shape</span>
+            </div>
+            <div class="button-card">
+              <button class="btn btn-morph-arcs">Arcs</button>
+              <span class="button-name">Arc Corners</span>
+            </div>
+            <div class="button-card">
+              <button class="btn btn-morph-pebble">Pebble</button>
+              <span class="button-name">Pebble Morph</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="category" aria-labelledby="cat-9-title">
+          <header class="category-header">
+            <span class="category-number" aria-hidden="true">09</span>
+            <div class="category-info">
+              <h3 id="cat-9-title" class="category-title">Interactive States</h3>
+              <p class="category-description">
+                Feedback states for loading, success, error, and more.
+              </p>
+            </div>
+            <div class="category-tags">
+              <span class="tag">:hover</span>
+              <span class="tag">:active</span>
+              <span class="tag">:disabled</span>
+              <span class="tag">animation</span>
+            </div>
+          </header>
+          <div class="category-grid">
+            <div class="button-card">
+              <button class="btn btn-loading" aria-busy="true">
+                <span class="btn-loading-spinner" aria-hidden="true"></span>
+                Loading
+              </button>
+              <span class="button-name">Loading Spinner</span>
+            </div>
+            <div class="button-card">
+              <button class="btn btn-loading-dots" aria-busy="true">
+                <span class="dots" aria-hidden="true">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </span>
+                Loading
+              </button>
+              <span class="button-name">Loading Dots</span>
+            </div>
+            <div class="button-card">
+              <button class="btn btn-success">Success</button>
+              <span class="button-name">Success State</span>
+            </div>
+            <div class="button-card">
+              <button class="btn btn-error">Error</button>
+              <span class="button-name">Error State</span>
+            </div>
+            <div class="button-card">
+              <button class="btn btn-toggle">Toggle</button>
+              <span class="button-name">Toggle Switch</span>
+            </div>
+            <div class="button-card">
+              <button class="btn btn-disabled" disabled aria-disabled="true">Disabled</button>
+              <span class="button-name">Disabled State</span>
+            </div>
+            <div class="button-card">
+              <button class="btn btn-warning">Warning</button>
+              <span class="button-name">Warning State</span>
+            </div>
+            <div class="button-card">
+              <button class="btn btn-saved">Save</button>
+              <span class="button-name">Saved State</span>
+            </div>
+            <div class="button-card">
+              <button class="btn btn-retry">
+                <i class="bi bi-arrow-repeat" aria-hidden="true"></i>
+                Retry
+              </button>
+              <span class="button-name">Retry State</span>
+            </div>
+            <div class="button-card">
+              <button class="btn btn-uploading">
+                <i class="bi bi-upload" aria-hidden="true"></i>
+                <span>Upload</span>
+              </button>
+              <span class="button-name">Uploading State</span>
+            </div>
+            <div class="button-card">
+              <button class="btn btn-offline">
+                <i class="bi bi-wifi-off" aria-hidden="true"></i>
+                Offline
+              </button>
+              <span class="button-name">Offline State</span>
+            </div>
+            <div class="button-card">
+              <button class="btn btn-paused">
+                <span class="pause-bars" aria-hidden="true"><span></span><span></span></span>
+                Paused
+              </button>
+              <span class="button-name">Paused State</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="category" aria-labelledby="cat-10-title">
+          <header class="category-header">
+            <span class="category-number" aria-hidden="true">10</span>
+            <div class="category-info">
+              <h3 id="cat-10-title" class="category-title">Icon Buttons</h3>
+              <p class="category-description">
+                Icon integration with animations and combined layouts.
+              </p>
+            </div>
+            <div class="category-tags">
+              <span class="tag">icon</span>
+              <span class="tag">bootstrap icons</span>
+              <span class="tag">transition</span>
+            </div>
+          </header>
+          <div class="category-grid">
+            <div class="button-card">
+              <button class="btn btn-icon-only" aria-label="Rocket">
+                <i class="bi bi-rocket-takeoff" aria-hidden="true"></i>
+              </button>
+              <span class="button-name">Icon Only</span>
+            </div>
+            <div class="button-card">
+              <button class="btn btn-icon-text">
+                <span>Launch</span>
+                <i class="bi bi-arrow-right icon" aria-hidden="true"></i>
+              </button>
+              <span class="button-name">Icon + Text</span>
+            </div>
+            <div class="button-card">
+              <button class="btn btn-icon-slide">
+                <span>Slide</span>
+                <i class="bi bi-arrow-right icon" aria-hidden="true"></i>
+              </button>
+              <span class="button-name">Icon Slide In</span>
+            </div>
+            <div class="button-card">
+              <button class="btn btn-icon-rotate">
+                <i class="bi bi-gear icon" aria-hidden="true"></i>
+                <span>Settings</span>
+              </button>
+              <span class="button-name">Icon Rotate</span>
+            </div>
+            <div class="button-card">
+              <button class="btn btn-fab" aria-label="Add">
+                <i class="bi bi-plus-lg" aria-hidden="true"></i>
+              </button>
+              <span class="button-name">FAB Button</span>
+            </div>
+            <div class="button-card">
+              <button class="btn btn-icon-swap">
+                <i class="bi bi-sun icon-default" aria-hidden="true"></i>
+                <i class="bi bi-moon icon-hover" aria-hidden="true"></i>
+                <span>Theme</span>
+              </button>
+              <span class="button-name">Icon Swap</span>
+            </div>
+            <div class="button-card">
+              <button class="btn btn-split">
+                <span class="btn-split-main">Download</span>
+                <span class="btn-split-action" aria-label="More options">
+                  <i class="bi bi-chevron-down" aria-hidden="true"></i>
+                </span>
+              </button>
+              <span class="button-name">Split Button</span>
+            </div>
+            <div class="button-card">
+              <button class="btn btn-icon-pulse">
+                <i class="bi bi-bell icon" aria-hidden="true"></i>
+                <span>Pulse</span>
+              </button>
+              <span class="button-name">Icon Pulse</span>
+            </div>
+            <div class="button-card">
+              <button class="btn btn-icon-lift-swap">
+                <i class="bi bi-heart icon-default" aria-hidden="true"></i>
+                <i class="bi bi-heart-fill icon-hover" aria-hidden="true"></i>
+                <span>Like</span>
+              </button>
+              <span class="button-name">Icon Lift Swap</span>
+            </div>
+            <div class="button-card">
+              <button class="btn btn-heart-pop">
+                <i class="bi bi-heart-fill" aria-hidden="true"></i>
+                <span>Heart</span>
+              </button>
+              <span class="button-name">Heart Pop</span>
+            </div>
+            <div class="button-card">
+              <button class="btn btn-star-spark">
+                <i class="bi bi-stars" aria-hidden="true"></i>
+                <span>Spark</span>
+              </button>
+              <span class="button-name">Star Spark</span>
+            </div>
+            <div class="button-card">
+              <button class="btn btn-smile-toggle">
+                <i class="bi bi-emoji-smile" aria-hidden="true"></i>
+                <span>Smile</span>
+              </button>
+              <span class="button-name">Smile Toggle</span>
+            </div>
+            <div class="button-card">
+              <button class="btn btn-cloud-puff">
+                <i class="bi bi-cloud-fill" aria-hidden="true"></i>
+                <span>Cloud</span>
+              </button>
+              <span class="button-name">Cloud Puff</span>
+            </div>
+            <div class="button-card">
+              <button class="btn btn-risograph" aria-label="Risograph">
+                <i class="bi bi-lightning-charge-fill" aria-hidden="true"></i>
+              </button>
+              <span class="button-name">Risograph</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="category" aria-labelledby="cat-11-title">
+          <header class="category-header">
+            <span class="category-number" aria-hidden="true">11</span>
+            <div class="category-info">
+              <h3 id="cat-11-title" class="category-title">Special Effects</h3>
+              <p class="category-description">
+                Advanced visual styles: glass, neon, retro, and futuristic.
+              </p>
+            </div>
+            <div class="category-tags">
+              <span class="tag">backdrop-filter</span>
+              <span class="tag">mix-blend-mode</span>
+              <span class="tag">animation</span>
+            </div>
+          </header>
+          <div class="category-grid">
+            <div class="button-card button-card-glass">
+              <button class="btn btn-glass">Glass</button>
+              <span class="button-name">Glassmorphism</span>
+            </div>
+            <div class="button-card">
+              <button class="btn btn-neumorph">Neumorph</button>
+              <span class="button-name">Neumorphism</span>
+            </div>
+            <div class="button-card button-card-dark">
+              <button class="btn btn-neumorph-dark">Neumorph</button>
+              <span class="button-name">Dark Neumorphism</span>
+            </div>
+            <div class="button-card">
+              <button class="btn btn-shimmer"><span>Shimmer</span></button>
+              <span class="button-name">Shimmer Sweep</span>
+            </div>
+            <div class="button-card">
+              <button class="btn btn-ripple"><span>Ripple</span></button>
+              <span class="button-name">Ripple Effect</span>
+            </div>
+            <div class="button-card">
+              <button class="btn btn-retro">Retro</button>
+              <span class="button-name">Retro/Pixel</span>
+            </div>
+            <div class="button-card button-card-dark">
+              <button class="btn btn-retro-arcade">Arcade</button>
+              <span class="button-name">Arcade Frame</span>
+            </div>
+            <div class="button-card button-card-dark">
+              <button class="btn btn-retro-terminal">Terminal</button>
+              <span class="button-name">CRT Terminal</span>
+            </div>
+            <div class="button-card">
+              <button class="btn btn-retro-stamp">Stamp</button>
+              <span class="button-name">Print Stamp</span>
+            </div>
+            <div class="button-card">
+              <button class="btn btn-retro-sunset">Sunset</button>
+              <span class="button-name">Sunset Stripe</span>
+            </div>
+            <div class="button-card button-card-dark">
+              <button class="btn btn-neon-sign">Neon Sign</button>
+              <span class="button-name">Neon Sign</span>
+            </div>
+            <div class="button-card">
+              <button class="btn btn-holographic">Holo</button>
+              <span class="button-name">Holographic</span>
+            </div>
+            <div class="button-card">
+              <button class="btn btn-prismatic-edge">Prism</button>
+              <span class="button-name">Prismatic Edge</span>
+            </div>
+            <div class="button-card">
+              <button class="btn btn-chrome">Chrome</button>
+              <span class="button-name">Chrome</span>
+            </div>
+            <div class="button-card button-card-dark">
+              <button class="btn btn-ghost-scan">Ghost</button>
+              <span class="button-name">Ghost Scan</span>
+            </div>
+            <div class="button-card">
+              <button class="btn btn-pearlescent">Pearl</button>
+              <span class="button-name">Pearlescent</span>
+            </div>
+            <div class="button-card button-card-glass">
+              <button class="btn btn-frosted-prism">Frosted</button>
+              <span class="button-name">Frosted Prism</span>
+            </div>
+            <div class="button-card">
+              <button class="btn btn-lenticular">Lenti</button>
+              <span class="button-name">Lenticular</span>
+            </div>
+            <div class="button-card button-card-dark">
+              <button class="btn btn-photon-rim">Photon</button>
+              <span class="button-name">Photon Rim</span>
+            </div>
+            <div class="button-card button-card-glass">
+              <button class="btn btn-refraction-band">Refract</button>
+              <span class="button-name">Refraction Band</span>
+            </div>
+            <div class="button-card">
+              <button class="btn btn-confetti-burst"><span>Party</span></button>
+              <span class="button-name">Confetti Burst</span>
+            </div>
+            <div class="button-card">
+              <button class="btn btn-sticker-peel">Peel</button>
+              <span class="button-name">Sticker Peel</span>
+            </div>
+            <div class="button-card">
+              <button class="btn btn-bubble-rise">Bubble</button>
+              <span class="button-name">Bubble Rise</span>
+            </div>
+            <div class="button-card">
+              <button class="btn btn-marker-underline"><span>Marker</span></button>
+              <span class="button-name">Marker Underline</span>
+            </div>
+            <div class="button-card">
+              <button class="btn btn-poster-block"><span>Poster</span></button>
+              <span class="button-name">Poster Block</span>
+            </div>
+            <div class="button-card button-card-dark">
+              <button class="btn btn-hud-frame">HUD</button>
+              <span class="button-name">HUD Frame</span>
+            </div>
+            <div class="button-card">
+              <button class="btn btn-fabric-tab">Fabric</button>
+              <span class="button-name">Fabric Tab</span>
+            </div>
+            <div class="button-card">
+              <button class="btn btn-painter-tape">Tape</button>
+              <span class="button-name">Painter's Tape</span>
+            </div>
+            <div class="button-card">
+              <button class="btn btn-sprinkle-frosting"><span>Frosting</span></button>
+              <span class="button-name">Sprinkle Frosting</span>
+            </div>
+            <div class="button-card">
+              <button class="btn btn-toy-block">Block</button>
+              <span class="button-name">Toy Block</span>
+            </div>
+            <div class="button-card">
+              <button class="btn btn-notebook-tab">Notebook</button>
+              <span class="button-name">Notebook Tab</span>
+            </div>
+            <div class="button-card">
+              <button class="btn btn-window-tab">Window</button>
+              <span class="button-name">Window Tab</span>
+            </div>
+            <div class="button-card">
+              <button class="btn btn-candy-stripe">Candy</button>
+              <span class="button-name">Candy Stripe</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+  </main>
+
+  <script src="scripts.js"></script>
+</body>
+
+</html>
