@@ -6,8 +6,8 @@ function enhanceButtonCards() {
   const cards = document.querySelectorAll(".button-card");
 
   cards.forEach((card, index) => {
-    const button = card.querySelector(".btn");
-    if (!button) return;
+    const copyRoot = card.querySelector("[data-copy-root]") || card.querySelector(".btn");
+    if (!copyRoot) return;
 
     const copyButton = document.createElement("button");
     copyButton.type = "button";
@@ -19,7 +19,7 @@ function enhanceButtonCards() {
       event.preventDefault();
       event.stopPropagation();
 
-      const snippet = buildStandaloneSnippet(button);
+      const snippet = buildStandaloneSnippet(copyRoot);
 
       try {
         await navigator.clipboard.writeText(snippet);
@@ -37,10 +37,11 @@ function enhanceButtonCards() {
 
 function buildStandaloneSnippet(button) {
   const buttonClasses = Array.from(button.classList).filter((className) => className !== "btn");
-  const primaryClass = buttonClasses[0] || "export-btn";
+  const primaryClass = pickPrimaryExportClass(buttonClasses);
   const exportTag = button.tagName.toLowerCase();
   const relatedClasses = new Set([
     primaryClass,
+    ...buttonClasses,
     ...Array.from(button.querySelectorAll("[class]")).flatMap((element) =>
       Array.from(element.classList).filter(Boolean)
     ),
@@ -55,7 +56,9 @@ function buildStandaloneSnippet(button) {
 
   const neededKeyframes = findReferencedKeyframes(collectedRules, keyframes);
   const exportButton = button.cloneNode(true);
-  exportButton.className = primaryClass;
+  if (button.classList.contains("btn")) {
+    exportButton.className = primaryClass;
+  }
   const baseRule = buildBaseExport(button, primaryClass, exportTag);
   const descendantRules = buildDescendantExports(button, primaryClass, exportTag);
   const iconLink = button.querySelector(".bi")
@@ -73,6 +76,11 @@ function buildStandaloneSnippet(button) {
     .join("\n\n");
 
   return `${iconLink}<style>\n${css}\n</style>\n\n${html}`;
+}
+
+function pickPrimaryExportClass(classNames) {
+  const genericClasses = new Set(["btn", "btn-set"]);
+  return classNames.find((className) => !genericClasses.has(className)) || classNames[0] || "export-btn";
 }
 
 function buildBaseExport(sourceButton, primaryClass, exportTag) {
@@ -115,27 +123,40 @@ function buildDescendantExports(sourceButton, primaryClass, exportTag) {
   const rules = [];
   const sourceChildren = sourceButton.querySelectorAll("*");
   sourceChildren.forEach((child) => {
-    const childClassList = Array.from(child.classList);
-    if (childClassList.length) {
-      return;
-    }
-
-    const selector = child.className
-      ? `${exportTag}.${primaryClass} .${String(child.className).trim().split(/\s+/).join(".")}`
+    const childClassList = Array.from(child.classList).filter(Boolean);
+    const selector = childClassList.length
+      ? `${exportTag}.${primaryClass} .${childClassList.join(".")}`
       : `${exportTag}.${primaryClass} ${child.tagName.toLowerCase()}`;
 
     const style = window.getComputedStyle(child);
     const declarations = [
+      "box-sizing: border-box;",
+      "appearance: none;",
+      "-webkit-appearance: none;",
       `position: ${style.position};`,
       `z-index: ${style.zIndex};`,
       `display: ${style.display};`,
       `align-items: ${style.alignItems};`,
       `justify-content: ${style.justifyContent};`,
+      `gap: ${style.gap};`,
       `width: ${style.width};`,
+      `min-width: ${style.minWidth};`,
       `height: ${style.height};`,
+      `min-height: ${style.minHeight};`,
+      `padding: ${style.padding};`,
+      `font-family: ${style.fontFamily};`,
       `font-size: ${style.fontSize};`,
-      `transform: ${style.transform};`,
+      `font-weight: ${style.fontWeight};`,
+      `line-height: ${style.lineHeight};`,
+      `letter-spacing: ${style.letterSpacing};`,
+      `color: ${style.color};`,
+      `background: ${style.background};`,
+      `border: ${style.border};`,
+      `border-radius: ${style.borderRadius};`,
+      `box-shadow: ${style.boxShadow};`,
       `opacity: ${style.opacity};`,
+      `transform: ${style.transform};`,
+      `cursor: ${style.cursor};`,
       `transition: ${style.transition};`,
     ].filter((line) => !line.endsWith(": ;") && !line.includes("undefined"));
 
