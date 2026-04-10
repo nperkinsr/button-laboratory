@@ -6410,28 +6410,6 @@ p {
   border: 2px solid rgb(29 35 42 / 0.14);
 }
 
-.btn-a11y-ring-only {
-  min-width: 168px;
-  text-transform: none;
-  letter-spacing: 0;
-  color: #22303b;
-  background: #ffffff;
-  border: 1px solid rgb(29 35 42 / 0.12);
-  box-shadow: none;
-}
-
-.btn-a11y-ring-only:hover {
-  background: #ffffff;
-  color: #22303b;
-  border-color: rgb(29 35 42 / 0.12);
-  box-shadow: none;
-}
-
-.btn-a11y-ring-only:focus-visible {
-  outline: 4px solid rgb(36 48 58 / 0.18);
-  outline-offset: 4px;
-}
-
 .btn-nav-next {
   min-width: 152px;
   text-transform: none;
@@ -6623,6 +6601,7 @@ p {
 
 .btn-micro-close,
 .btn-micro-kebab,
+.btn-micro-copy-icon,
 .btn-micro-bookmark,
 .btn-micro-pin {
   min-width: 42px;
@@ -6637,6 +6616,10 @@ p {
 }
 
 .btn-micro-kebab {
+  border-radius: 10rem;
+}
+
+.btn-micro-copy-icon {
   border-radius: 10rem;
 }
 
@@ -6655,6 +6638,20 @@ p {
 
 .btn-micro-kebab:hover {
   background: #f8fafc;
+}
+
+.btn-micro-copy-icon:hover {
+  color: #ffffff;
+  background: #2b3440;
+}
+
+.btn-micro-copy-icon i {
+  color: currentColor;
+  transition: color 0.2s cubic-bezier(0, 0, 0.2, 1);
+}
+
+.btn-micro-copy-icon:hover i {
+  color: #ffffff !important;
 }
 
 .btn-micro-filter,
