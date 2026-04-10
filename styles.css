@@ -1495,7 +1495,7 @@ p {
 }
 
 .btn-shadow-layers {
-  background: #f3f5f7;
+  background: #ffffff;
   color: #24303a;
   border: 1px solid rgb(29 35 42 / 0.12);
   border-radius: 0.6rem;
@@ -1548,7 +1548,7 @@ p {
 }
 
 .btn-shadow-lift {
-  background: #f3f5f7;
+  background: #ffffff;
   color: #24303a;
   border: 1px solid rgb(29 35 42 / 0.12);
   border-radius: 0.6rem;
@@ -1591,7 +1591,7 @@ p {
 }
 
 .btn-shadow-long {
-  background: #f3f5f7;
+  background: #ffffff;
   color: #24303a;
   border: 1px solid rgb(29 35 42 / 0.12);
   border-radius: 0.6rem;
@@ -1651,7 +1651,7 @@ p {
 }
 
 .btn-shadow-cutout {
-  background: #f3f5f7;
+  background: #ffffff;
   color: #24303a;
   border: 1px solid rgb(29 35 42 / 0.12);
   border-radius: 0.6rem;
@@ -1679,7 +1679,7 @@ p {
 }
 
 .btn-shadow-trail {
-  background: #f3f5f7;
+  background: #ffffff;
   color: #24303a;
   border: 1px solid rgb(29 35 42 / 0.12);
   border-radius: 0.6rem;
@@ -2124,9 +2124,24 @@ p {
   box-shadow: none;
 }
 
+.btn-fill-left,
+.btn-fill-right,
+.btn-fill-up,
+.btn-fill-down,
+.btn-fill-radial,
+.btn-fill-diagonal,
+.btn-fill-curtain,
+.btn-fill-center-split,
+.btn-fill-wave,
+.btn-fill-cross,
+.btn-fill-liquid {
+  background: #ffffff;
+}
+
 .btn-fill-left {
   color: #24303a;
-  background: #f3f5f7;
+  background: #ffffff;
+  border: none;
 }
 
 .btn-fill-left::before {
@@ -2146,7 +2161,8 @@ p {
 
 .btn-fill-right {
   color: #24303a;
-  background: #f3f5f7;
+  background: #ffffff;
+  border: none;
 }
 
 .btn-fill-right::before {
@@ -2166,7 +2182,8 @@ p {
 
 .btn-fill-up {
   color: #24303a;
-  background: #f3f5f7;
+  background: #ffffff;
+  border: none;
 }
 
 .btn-fill-up::before {
@@ -2186,7 +2203,8 @@ p {
 
 .btn-fill-down {
   color: #24303a;
-  background: #f3f5f7;
+  background: #ffffff;
+  border: none;
 }
 
 .btn-fill-down::before {
@@ -2206,7 +2224,8 @@ p {
 
 .btn-fill-radial {
   color: #24303a;
-  background: #f3f5f7;
+  background: #ffffff;
+  border: none;
 }
 
 .btn-fill-radial::before {
@@ -2232,7 +2251,8 @@ p {
 
 .btn-fill-diagonal {
   color: #24303a;
-  background: #f3f5f7;
+  background: #ffffff;
+  border: none;
 }
 
 .btn-fill-diagonal::before {
@@ -2252,7 +2272,8 @@ p {
 
 .btn-fill-curtain {
   color: #24303a;
-  background: #f3f5f7;
+  background: #ffffff;
+  border: none;
 }
 
 .btn-fill-curtain::before,
@@ -2286,7 +2307,8 @@ p {
 
 .btn-fill-liquid {
   color: #24303a;
-  background: #f3f5f7;
+  background: #ffffff;
+  border: none;
   overflow: hidden;
 }
 
@@ -2308,7 +2330,8 @@ p {
 
 .btn-fill-center-split {
   color: #24303a;
-  background: #f3f5f7;
+  background: #ffffff;
+  border: none;
 }
 
 .btn-fill-center-split::before,
@@ -2393,7 +2416,8 @@ p {
 
 .btn-fill-wave {
   color: #24303a;
-  background: #f3f5f7;
+  background: #ffffff;
+  border: none;
   overflow: hidden;
 }
 
@@ -2490,7 +2514,8 @@ p {
 
 .btn-fill-cross {
   color: #24303a;
-  background: #f3f5f7;
+  background: #ffffff;
+  border: none;
   overflow: hidden;
 }
 
@@ -2686,7 +2711,7 @@ p {
 }
 
 .btn-text-gradient {
-  background: #f3f5f7;
+  background: #ffffff;
   border-color: transparent;
 }
 
@@ -2733,7 +2758,7 @@ p {
 }
 
 .btn-text-expand {
-  background: #f3f5f7;
+  background: #ffffff;
   border-color: transparent;
   color: #24303a;
   letter-spacing: 0.05em;
@@ -2745,7 +2770,7 @@ p {
 }
 
 .btn-text-reveal {
-  background: #f3f5f7;
+  background: #ffffff;
   color: #24303a;
   overflow: hidden;
 }
@@ -2834,7 +2859,7 @@ p {
 }
 
 .btn-text-slide-swap {
-  background: #f3f5f7;
+  background: #ffffff;
   color: #24303a;
   overflow: hidden;
 }
@@ -2872,7 +2897,7 @@ p {
 }
 
 .btn-text-blur {
-  background: #f3f5f7;
+  background: #ffffff;
   border-color: transparent;
   color: #24303a;
   filter: blur(1.8px);
@@ -2943,7 +2968,7 @@ p {
 }
 
 .btn-text-stretch {
-  background: #f3f5f7;
+  background: #ffffff;
   border-color: transparent;
   color: #24303a;
   transition: transform 0.3s cubic-bezier(0, 0, 0.2, 1);
@@ -2954,7 +2979,7 @@ p {
 }
 
 .btn-text-highlight {
-  background: #f3f5f7;
+  background: #ffffff;
   border-color: transparent;
   color: #24303a;
   overflow: hidden;
